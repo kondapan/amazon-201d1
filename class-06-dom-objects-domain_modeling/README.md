@@ -3,14 +3,6 @@
 <a id="top"></a>
 ## Lecture 6
 
-## Today's Schedule
-- Introduction
-- Overview of daily concepts
-- Domain modeling
-- JavaScript objects
-- The DOM
-- Prep for lab
-
 ## Learning Objectives
 
 As a result of completing Lecture 6 of Code 201, students will:
