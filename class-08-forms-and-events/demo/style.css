@@ -1,0 +1,35 @@
+body {
+    font-family: helvetica;
+    font-size: 30px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+input[type="text"] {
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 3px;
+    width: 50%;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+thead {
+    background: #888;
+}
+
+td, th {
+    padding: 20px;
+    border: solid 1px black;
+}
