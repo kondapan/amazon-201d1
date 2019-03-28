@@ -1,6 +1,6 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var theTable = document.getElementById('sales-table');
-var theForm = document.getElementById('add-location')
+var theForm = document.getElementById('add-location');
 
 function CookieStand(locationName, minCustomersPerHour, maxCustomersPerHour, avgCookiesPerSale) {
   this.locationName = locationName;
@@ -50,6 +50,7 @@ CookieStand.prototype.render = function() {
 }
 
 CookieStand.all = [];
+
 new CookieStand('Pike Place Market', 23, 65, 6.3, 'pike');
 new CookieStand('SeaTac Airport', 3, 24, 1.2, 'seatac');
 new CookieStand('Seattle Center', 11, 38, 3.7, 'seattlecenter');
@@ -111,7 +112,7 @@ function makeFooterRow() {
   for (var i = 0; i < hours.length; i++) {
     hourlyTotal = 0;
     for (var j = 0; j < CookieStand.all.length; j++){
-      hourlyTotal += CookieStand.all[j].cookiesEachHour[i];
+      hourlyTotal += CookieStand.all[i].cookiesEachHour[i];
       // console.log('one hourly total', CookieStand.all[j].cookiesEachHour[i]);
       // console.log('running total for this hour', hourlyTotal);
       totalOfTotals += CookieStand.all[j].cookiesEachHour[i];
