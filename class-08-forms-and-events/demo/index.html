@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms and events demo</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- all content goes in the body tag -->
+        <form id="sample_form">
+            <fieldset>
+                <label for="first">first name:</label>
+                <input type="text" name="first" placeholder="enter first name" minLength="3" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="last">last name:</label>
+                <input type="text" name="last" placeholder="enter last name" minLength="3" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="currently_enrolled">enrolled at cf?</label>
+                <input type="checkbox" name="enrolled" value="enrolled">
+            </fieldset>
+
+            <fieldset>
+                <label for="future_classes">interested in taking more classes?</label>
+                <input type="radio" name="future_classes" value="yes"> yes
+                <input type="radio" name="future_classes" value="no"> no
+            </fieldset>
+            
+            <button id="submit_btn" type="submit">add student</button>
+        </form>
+
+        <section>
+            <table>
+                <thead>
+                    <th>first name</th>
+                    <th>last name</th>
+                    <th>enrolled?</th>
+                    <th>interested in future stuff?</th>
+                </thead>
+                <tbody id="student_table">
+                    <!-- dynamic data will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <script src="app.js"></script>
+    </body>
+</html>
